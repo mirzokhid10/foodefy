@@ -8,536 +8,433 @@
       <TopProducts />
     </div>
   </div> -->
-  <div class="flex h-screen">
-    <!-- Sidebar -->
-    <div class="w-64 bg-white shadow-lg p-4 hidden md:block">
-      <div class="flex items-center mb-8">
-        <div
-          class="bg-primary w-10 h-10 rounded-lg flex items-center justify-center"
-        >
-          <i class="fas fa-chart-line text-white text-xl"></i>
-        </div>
-        <h1 class="text-xl font-bold text-dark ml-3">STREAK</h1>
-      </div>
-
-      <div class="mb-8">
-        <h2 class="text-xs uppercase tracking-wider text-gray-500 mb-2">
-          DataflowID
-        </h2>
-        <ul class="space-y-1">
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-dark font-medium flex items-center"
-          >
-            <i class="fas fa-tachometer-alt mr-3 text-gray-500"></i>
-            Dashboard
-          </li>
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center"
-          >
-            <i class="fas fa-chart-pie mr-3"></i>
-            General Dashboard
-          </li>
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center bg-primary/10 text-primary"
-          >
-            <i class="fas fa-shopping-cart mr-3"></i>
-            Ecommerce Dashboard
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h2 class="text-xs uppercase tracking-wider text-gray-500 mb-2">
-          STARTER
-        </h2>
-        <ul class="space-y-1">
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center"
-          >
-            <i class="fas fa-th-large mr-3"></i>
-            Layout
-          </li>
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center"
-          >
-            <i class="fas fa-file mr-3"></i>
-            Blank Page
-          </li>
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center"
-          >
-            <i class="fas fa-layer-group mr-3"></i>
-            Duetstage
-          </li>
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center"
-          >
-            <i class="fas fa-fire mr-3"></i>
-            STREAK
-          </li>
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center"
-          >
-            <i class="fas fa-puzzle-piece mr-3"></i>
-            Components
-          </li>
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center"
-          >
-            <i class="fas fa-edit mr-3"></i>
-            Forms
-          </li>
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center"
-          >
-            <i class="fas fa-map-marker-alt mr-3"></i>
-            Google Maps
-          </li>
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center"
-          >
-            <i class="fas fa-cubes mr-3"></i>
-            Modules
-          </li>
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center"
-          >
-            <i class="fas fa-file-alt mr-3"></i>
-            PAGES
-          </li>
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center"
-          >
-            <i class="fas fa-lock mr-3"></i>
-            Auth
-          </li>
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center"
-          >
-            <i class="fas fa-exclamation-triangle mr-3"></i>
-            Errors
-          </li>
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center"
-          >
-            <i class="fas fa-star mr-3"></i>
-            Features
-          </li>
-          <li
-            class="sidebar-item px-3 py-2 rounded-lg text-gray-600 flex items-center"
-          >
-            <i class="fas fa-tools mr-3"></i>
-            Utilities
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="flex-1 overflow-auto">
-      <!-- Header -->
-      <header class="bg-white shadow-sm p-4 flex justify-between items-center">
-        <div class="flex items-center">
-          <button class="md:hidden mr-3 text-gray-600">
-            <i class="fas fa-bars text-xl"></i>
-          </button>
-          <h2 class="text-xl font-bold text-gray-800">Ecommerce Dashboard</h2>
-        </div>
-        <div class="flex items-center space-x-4">
-          <div class="relative">
-            <i class="fas fa-bell text-gray-500 text-xl"></i>
-            <span
-              class="absolute -top-1 -right-1 bg-red-500 text-white rounded-full w-4 h-4 flex items-center justify-center text-xs"
-              >3</span
-            >
-          </div>
-          <div class="w-10 h-10 rounded-full bg-gray-200 overflow-hidden">
-            <img
-              src="https://randomuser.me/api/portraits/women/44.jpg"
-              alt="User"
-              class="w-full h-full object-cover"
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li>
+              <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"
+                ><i class="fas fa-bars"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-toggle="search"
+                class="nav-link nav-link-lg d-sm-none"
+                ><i class="fas fa-search"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="search-element">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              data-width="250"
             />
-          </div>
-        </div>
-      </header>
-
-      <!-- Dashboard Content -->
-      <div class="p-4 md:p-6">
-        <div class="mb-6">
-          <h1 class="text-2xl font-bold text-gray-800">
-            Order Statistics - August
-          </h1>
-          <p class="text-gray-600">
-            Track your sales and orders for this month
-          </p>
-        </div>
-
-        <!-- Stats Section -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-          <div class="stat-card bg-white rounded-xl shadow p-6 transition-all">
-            <div class="flex justify-between items-start">
-              <div>
-                <p class="text-gray-500 mb-2">Pending</p>
-                <h3 class="text-3xl font-bold text-gray-800">24</h3>
+            <button class="btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+            <div class="search-backdrop"></div>
+            <div class="search-result">
+              <div class="search-header">Histories</div>
+              <div class="search-item">
+                <a href="#">How to hack NASA using CSS</a>
+                <a href="#" class="search-close"
+                  ><i class="fas fa-times"></i
+                ></a>
               </div>
-              <div
-                class="bg-orange-100 w-12 h-12 rounded-lg flex items-center justify-center"
+              <div class="search-item">
+                <a href="#">Kodinger.com</a>
+                <a href="#" class="search-close"
+                  ><i class="fas fa-times"></i
+                ></a>
+              </div>
+              <div class="search-item">
+                <a href="#">#Stisla</a>
+                <a href="#" class="search-close"
+                  ><i class="fas fa-times"></i
+                ></a>
+              </div>
+              <div class="search-header">Result</div>
+              <div class="search-item">
+                <a href="#">
+                  <img
+                    class="mr-3 rounded"
+                    width="30"
+                    src="../../../public/admin/img/products/product-3-50.png"
+                    alt="product"
+                  />
+                  oPhone S9 Limited Edition
+                </a>
+              </div>
+              <div class="search-item">
+                <a href="#">
+                  <img
+                    class="mr-3 rounded"
+                    width="30"
+                    src="../../../public/admin/img/products/product-2-50.png"
+                    alt="product"
+                  />
+                  Drone X2 New Gen-7
+                </a>
+              </div>
+              <div class="search-item">
+                <a href="#">
+                  <img
+                    class="mr-3 rounded"
+                    width="30"
+                    src="../../../public/admin/img/products/product-1-50.png"
+                    alt="product"
+                  />
+                  Headphone Blitz
+                </a>
+              </div>
+              <div class="search-header">Projects</div>
+              <div class="search-item">
+                <a href="#">
+                  <div class="search-icon bg-danger text-white mr-3">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  Stisla Admin Template
+                </a>
+              </div>
+              <div class="search-item">
+                <a href="#">
+                  <div class="search-icon bg-primary text-white mr-3">
+                    <i class="fas fa-laptop"></i>
+                  </div>
+                  Create a new Homepage Design
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown dropdown-list-toggle">
+            <a
+              href="#"
+              data-toggle="dropdown"
+              class="nav-link nav-link-lg message-toggle beep"
+              ><i class="far fa-envelope"></i
+            ></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">
+                Messages
+                <div class="float-right">
+                  <a href="#">Mark All As Read</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-avatar">
+                    <img
+                      alt="image"
+                      src="../../../public/admin/img/avatar/avatar-1.png"
+                      class="rounded-circle"
+                    />
+                    <div class="is-online"></div>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Kusnaedi</b>
+                    <p>Hello, Bro!</p>
+                    <div class="time">10 Hours Ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-avatar">
+                    <img
+                      alt="image"
+                      src="../../../public/admin/img/avatar/avatar-2.png"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Dedik Sugiharto</b>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    </p>
+                    <div class="time">12 Hours Ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-avatar">
+                    <img
+                      alt="image"
+                      src="../../../public/admin/img/avatar/avatar-3.png"
+                      class="rounded-circle"
+                    />
+                    <div class="is-online"></div>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Agung Ardiansyah</b>
+                    <p>
+                      Sunt in culpa qui officia deserunt mollit anim id est
+                      laborum.
+                    </p>
+                    <div class="time">12 Hours Ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-avatar">
+                    <img
+                      alt="image"
+                      src="../../../public/admin/img/avatar/avatar-4.png"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Ardian Rahardiansyah</b>
+                    <p>
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      ess
+                    </p>
+                    <div class="time">16 Hours Ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-avatar">
+                    <img
+                      alt="image"
+                      src="../../../public/admin/img/avatar/avatar-5.png"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Alfa Zulkarnain</b>
+                    <p>
+                      Exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                    <div class="time">Yesterday</div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown dropdown-list-toggle">
+            <a
+              href="#"
+              data-toggle="dropdown"
+              class="nav-link notification-toggle nav-link-lg beep"
+              ><i class="far fa-bell"></i
+            ></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">
+                Notifications
+                <div class="float-right">
+                  <a href="#">Mark All As Read</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-icons">
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-icon bg-primary text-white">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    Template update is available now!
+                    <div class="time text-primary">2 Min Ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-icon bg-info text-white">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>You</b> and <b>Dedik Sugiharto</b> are now friends
+                    <div class="time">10 Hours Ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-icon bg-success text-white">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Kusnaedi</b> has moved task <b>Fix bug header</b> to
+                    <b>Done</b>
+                    <div class="time">12 Hours Ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-icon bg-danger text-white">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    Low disk space. Let's clean it!
+                    <div class="time">17 Hours Ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-icon bg-info text-white">
+                    <i class="fas fa-bell"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    Welcome to Stisla template!
+                    <div class="time">Yesterday</div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a
+              href="#"
+              data-toggle="dropdown"
+              class="nav-link flex justify-between justify-items-center items-center dropdown-toggle nav-link-lg nav-link-user"
+            >
+              <img
+                alt="image"
+                src="../../../public/admin/img/avatar/avatar-1.png"
+                class="rounded-circle mr-1"
+              />
+              <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div></a
+            >
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-title">Logged in 5 min ago</div>
+              <a href="features-profile.html" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Profile
+              </a>
+              <a href="features-activities.html" class="dropdown-item has-icon">
+                <i class="fas fa-bolt"></i> Activities
+              </a>
+              <a href="features-settings.html" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Settings
+              </a>
+              <div class="dropdown-divider"></div>
+
+              <a
+                @click.prevent="logout"
+                class="dropdown-item has-icon text-danger cursor-pointer"
               >
-                <i class="fas fa-clock text-orange-500 text-xl"></i>
-              </div>
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
             </div>
-            <div class="mt-4 flex items-center text-sm text-green-500">
-              <i class="fas fa-arrow-up mr-1"></i>
-              <span>12% from last month</span>
-            </div>
-          </div>
+          </li>
+        </ul>
+      </nav>
 
-          <div class="stat-card bg-white rounded-xl shadow p-6 transition-all">
-            <div class="flex justify-between items-start">
-              <div>
-                <p class="text-gray-500 mb-2">Shipping</p>
-                <h3 class="text-3xl font-bold text-gray-800">12</h3>
-              </div>
-              <div
-                class="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center"
-              >
-                <i class="fas fa-shipping-fast text-blue-500 text-xl"></i>
-              </div>
-            </div>
-            <div class="mt-4 flex items-center text-sm text-green-500">
-              <i class="fas fa-arrow-up mr-1"></i>
-              <span>8% from last month</span>
-            </div>
-          </div>
+      <Sidebar />
 
-          <div class="stat-card bg-white rounded-xl shadow p-6 transition-all">
-            <div class="flex justify-between items-start">
-              <div>
-                <p class="text-gray-500 mb-2">Combined</p>
-                <h3 class="text-3xl font-bold text-gray-800">23</h3>
-              </div>
-              <div
-                class="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center"
-              >
-                <i class="fas fa-boxes text-purple-500 text-xl"></i>
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card card-statistic-2">
+                <div class="card-stats">
+                  <div class="card-stats-title">
+                    Order Statistics -
+                    <div class="dropdown d-inline">
+                      <a
+                        class="font-weight-600 dropdown-toggle"
+                        data-toggle="dropdown"
+                        href="#"
+                        id="orders-month"
+                        >August</a
+                      >
+                      <ul class="dropdown-menu dropdown-menu-sm">
+                        <li class="dropdown-title">Select Month</li>
+                        <li><a href="#" class="dropdown-item">January</a></li>
+                        <li><a href="#" class="dropdown-item">February</a></li>
+                        <li><a href="#" class="dropdown-item">March</a></li>
+                        <li><a href="#" class="dropdown-item">April</a></li>
+                        <li><a href="#" class="dropdown-item">May</a></li>
+                        <li><a href="#" class="dropdown-item">June</a></li>
+                        <li><a href="#" class="dropdown-item">July</a></li>
+                        <li>
+                          <a href="#" class="dropdown-item active">August</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item">September</a></li>
+                        <li><a href="#" class="dropdown-item">October</a></li>
+                        <li><a href="#" class="dropdown-item">November</a></li>
+                        <li><a href="#" class="dropdown-item">December</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-stats-items">
+                    <div class="card-stats-item">
+                      <div class="card-stats-item-count">24</div>
+                      <div class="card-stats-item-label">Pending</div>
+                    </div>
+                    <div class="card-stats-item">
+                      <div class="card-stats-item-count">12</div>
+                      <div class="card-stats-item-label">Shipping</div>
+                    </div>
+                    <div class="card-stats-item">
+                      <div class="card-stats-item-count">23</div>
+                      <div class="card-stats-item-label">Completed</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-icon shadow-primary bg-primary">
+                  <i class="fas fa-archive"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Total Orders</h4>
+                  </div>
+                  <div class="card-body">59</div>
+                </div>
               </div>
             </div>
-            <div class="mt-4 flex items-center text-sm text-green-500">
-              <i class="fas fa-arrow-up mr-1"></i>
-              <span>5% from last month</span>
-            </div>
-          </div>
-
-          <div class="stat-card bg-white rounded-xl shadow p-6 transition-all">
-            <div class="flex justify-between items-start">
-              <div>
-                <p class="text-gray-500 mb-2">Total Orders</p>
-                <h3 class="text-3xl font-bold text-gray-800">59</h3>
-              </div>
-              <div
-                class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center"
-              >
-                <i class="fas fa-shopping-cart text-green-500 text-xl"></i>
-              </div>
-            </div>
-            <div class="mt-4 flex items-center text-sm text-green-500">
-              <i class="fas fa-arrow-up mr-1"></i>
-              <span>18% from last month</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Charts and Products Section -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <!-- Budget vs Sales -->
-          <div class="lg:col-span-2 bg-white rounded-xl shadow p-6">
-            <div class="flex justify-between items-center mb-6">
-              <h3 class="text-lg font-bold text-gray-800">Budget vs Sales</h3>
-              <div class="flex items-center space-x-2">
-                <div class="flex items-center">
-                  <div class="w-3 h-3 bg-primary rounded-full mr-2"></div>
-                  <span class="text-sm text-gray-600">Budget</span>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card card-statistic-2">
+                <div class="card-chart">
+                  <canvas id="balance-chart" height="80"></canvas>
                 </div>
-                <div class="flex items-center">
-                  <div class="w-3 h-3 bg-success rounded-full mr-2"></div>
-                  <span class="text-sm text-gray-600">Sales</span>
+                <div class="card-icon shadow-primary bg-primary">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Balance</h4>
+                  </div>
+                  <div class="card-body">$187,13</div>
                 </div>
               </div>
             </div>
-
-            <div class="space-y-5">
-              <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-sm text-gray-600">STROK</span>
-                  <span class="text-sm font-medium text-gray-800">$8,000</span>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card card-statistic-2">
+                <div class="card-chart">
+                  <canvas id="sales-chart" height="80"></canvas>
                 </div>
-                <div class="w-full bg-gray-200 rounded-full h-2.5">
-                  <div
-                    class="bg-primary h-2.5 rounded-full progress-bar"
-                    style="width: 80%"
-                  ></div>
+                <div class="card-icon shadow-primary bg-primary">
+                  <i class="fas fa-shopping-bag"></i>
                 </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-sm text-gray-600">Project B</span>
-                  <span class="text-sm font-medium text-gray-800">$4,000</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2.5">
-                  <div
-                    class="bg-primary h-2.5 rounded-full progress-bar"
-                    style="width: 65%"
-                  ></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-sm text-gray-600">Project C</span>
-                  <span class="text-sm font-medium text-gray-800">$3,000</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2.5">
-                  <div
-                    class="bg-primary h-2.5 rounded-full progress-bar"
-                    style="width: 50%"
-                  ></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-sm text-gray-600">Project D</span>
-                  <span class="text-sm font-medium text-gray-800">$2,000</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2.5">
-                  <div
-                    class="bg-primary h-2.5 rounded-full progress-bar"
-                    style="width: 40%"
-                  ></div>
-                </div>
-              </div>
-              <div>
-                <div class="flex justify-between mb-1">
-                  <span class="text-sm text-gray-600">Project E</span>
-                  <span class="text-sm font-medium text-gray-800">$1,000</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2.5">
-                  <div
-                    class="bg-primary h-2.5 rounded-full progress-bar"
-                    style="width: 30%"
-                  ></div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Sales</h4>
+                  </div>
+                  <div class="card-body">4,732</div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Balance and Total Price -->
-          <div class="space-y-6">
-            <div class="bg-white rounded-xl shadow p-6">
-              <h3 class="text-lg font-bold text-gray-800 mb-4">Balance</h3>
-              <div class="flex justify-between items-end">
-                <h4 class="text-3xl font-bold text-gray-800">$187,13</h4>
-                <div
-                  class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center"
-                >
-                  <i class="fas fa-wallet text-green-500 text-xl"></i>
-                </div>
-              </div>
-              <div class="mt-4 flex items-center text-sm text-green-500">
-                <i class="fas fa-arrow-up mr-1"></i>
-                <span>8.2% from last month</span>
-              </div>
-            </div>
-
-            <div class="bg-white rounded-xl shadow p-6">
-              <h3 class="text-lg font-bold text-gray-800 mb-4">
-                Total Price (USD)
-              </h3>
-              <div class="flex justify-between items-end">
-                <h4 class="text-3xl font-bold text-gray-800">4,732</h4>
-                <div
-                  class="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center"
-                >
-                  <i class="fas fa-dollar-sign text-blue-500 text-xl"></i>
-                </div>
-              </div>
-              <div class="mt-4 flex items-center text-sm text-green-500">
-                <i class="fas fa-arrow-up mr-1"></i>
-                <span>14.5% from last month</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Products Section -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
-          <!-- Top 5 Products -->
-          <div class="lg:col-span-2 bg-white rounded-xl shadow p-6">
-            <h3 class="text-lg font-bold text-gray-800 mb-4">Top 5 Products</h3>
-            <div class="space-y-4">
-              <div class="flex items-center justify-between pb-4 border-b">
-                <div class="flex items-center">
-                  <div
-                    class="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mr-4"
-                  >
-                    <i class="fas fa-mobile-alt text-gray-600"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-medium text-gray-800">iPhone S9 Limited</h4>
-                    <p class="text-sm text-gray-500">Electronics</p>
-                  </div>
-                </div>
-                <div>
-                  <p class="font-bold text-gray-800">$80,700</p>
-                  <p class="text-sm text-green-500 text-right">+12.4%</p>
-                </div>
-              </div>
-
-              <div class="flex items-center justify-between pb-4 border-b">
-                <div class="flex items-center">
-                  <div
-                    class="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mr-4"
-                  >
-                    <i class="fas fa-laptop text-gray-600"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-medium text-gray-800">MacBook Pro M2</h4>
-                    <p class="text-sm text-gray-500">Computers</p>
-                  </div>
-                </div>
-                <div>
-                  <p class="font-bold text-gray-800">$60,714</p>
-                  <p class="text-sm text-green-500 text-right">+8.2%</p>
-                </div>
-              </div>
-
-              <div class="flex items-center justify-between pb-4 border-b">
-                <div class="flex items-center">
-                  <div
-                    class="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mr-4"
-                  >
-                    <i class="fas fa-tablet-alt text-gray-600"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-medium text-gray-800">iPad Pro</h4>
-                    <p class="text-sm text-gray-500">Tablets</p>
-                  </div>
-                </div>
-                <div>
-                  <p class="font-bold text-gray-800">$70,000</p>
-                  <p class="text-sm text-green-500 text-right">+9.7%</p>
-                </div>
-              </div>
-
-              <div class="flex items-center justify-between pb-4 border-b">
-                <div class="flex items-center">
-                  <div
-                    class="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mr-4"
-                  >
-                    <i class="fas fa-headphones text-gray-600"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-medium text-gray-800">AirPods Max</h4>
-                    <p class="text-sm text-gray-500">Audio</p>
-                  </div>
-                </div>
-                <div>
-                  <p class="font-bold text-gray-800">$50,713</p>
-                  <p class="text-sm text-green-500 text-right">+6.5%</p>
-                </div>
-              </div>
-
-              <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                  <div
-                    class="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mr-4"
-                  >
-                    <i class="fas fa-watch text-gray-600"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-medium text-gray-800">Apple Watch</h4>
-                    <p class="text-sm text-gray-500">Wearables</p>
-                  </div>
-                </div>
-                <div>
-                  <p class="font-bold text-gray-800">$40,733</p>
-                  <p class="text-sm text-green-500 text-right">+4.3%</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Headphone BItz and Trading Price -->
-          <div class="space-y-6">
-            <div class="bg-white rounded-xl shadow p-6">
-              <h3 class="text-lg font-bold text-gray-800 mb-4">
-                Headphone BItz
-              </h3>
-              <div class="flex justify-between">
-                <div>
-                  <p class="text-2xl font-bold text-gray-800">$2,737</p>
-                  <p class="text-sm text-gray-500">Last Month</p>
-                </div>
-                <div>
-                  <p class="text-2xl font-bold text-gray-800">$2,935</p>
-                  <p class="text-sm text-gray-500">This Month</p>
-                </div>
-              </div>
-              <div class="mt-4">
-                <div class="flex justify-between mb-1">
-                  <span class="text-sm text-gray-600">Sales Progress</span>
-                  <span class="text-sm font-medium text-gray-800">78%</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2.5">
-                  <div
-                    class="bg-purple-500 h-2.5 rounded-full progress-bar"
-                    style="width: 78%"
-                  ></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-white rounded-xl shadow p-6">
-              <h3 class="text-lg font-bold text-gray-800 mb-4">
-                Trading Price
-              </h3>
-              <div class="space-y-3">
-                <div
-                  class="flex justify-between items-center p-3 bg-blue-50 rounded-lg"
-                >
-                  <div>
-                    <p class="font-medium text-gray-800">Q3 Earnings</p>
-                    <p class="text-sm text-gray-500">August 15, 2025</p>
-                  </div>
-                  <p class="text-xl font-bold text-gray-800">$1,445</p>
-                </div>
-                <div
-                  class="flex justify-between items-center p-3 bg-green-50 rounded-lg"
-                >
-                  <div>
-                    <p class="font-medium text-gray-800">Product Launch</p>
-                    <p class="text-sm text-gray-500">August 22, 2025</p>
-                  </div>
-                  <p class="text-xl font-bold text-gray-800">$1,844</p>
-                </div>
-                <div
-                  class="flex justify-between items-center p-3 bg-orange-50 rounded-lg"
-                >
-                  <div>
-                    <p class="font-medium text-gray-800">Holiday Sales</p>
-                    <p class="text-sm text-gray-500">August 29, 2025</p>
-                  </div>
-                  <p class="text-xl font-bold text-gray-800">$1,864</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2018
+          <div class="bullet"></div>
+          Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
+        </div>
+        <div class="footer-right"></div>
+      </footer>
     </div>
   </div>
 </template>
 
 <script setup>
-import Sidebar from "../../components/AdminLayouts/Sidebar.vue";
-import Header from "../../components/AdminLayouts/Header.vue";
-import StatsCards from "../../components/AdminLayouts/StatsCards.vue";
+import Sidebar from "../admin/layouts/Sidebar.vue";
+import { useLogout } from "../../composables/useLogout";
+const { logout } = useLogout();
 </script>

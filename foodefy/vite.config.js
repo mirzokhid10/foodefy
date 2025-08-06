@@ -12,3 +12,20 @@ export default defineConfig({
     },
   },
 });
+
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#4361ee",
+        secondary: "#3f37c9",
+        success: "#4ade80",
+        danger: "#f43f5e",
+        warning: "#f59e0b",
+        info: "#0ea5e9",
+        dark: "#1e293b",
+        light: "#f8fafc",
+      },
+    },
+  },
+};
