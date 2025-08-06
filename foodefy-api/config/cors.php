@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    'paths' => ['/*', 'sanctum/csrf-cookie', 'admin/*'],
     'allowed_methods' => ['*'],
     'allowed_origins' => ['http://localhost:5173'], // Vue Vite frontend
     'allowed_headers' => ['*'],
